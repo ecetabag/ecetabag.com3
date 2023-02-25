@@ -14,8 +14,6 @@
 
    </head>
    <body>
-                <form action="http://www.google.com/translate" >
-
       <nav class="navbar navbar-default color-fill navbar-fixed-top">
          <div class="col-md-12">
             <div class="nav">
@@ -25,18 +23,16 @@
                <span class="icon-bar bottom"></span>
                </button>
             </div>
-          
- <nav class="navbar navbar-default navbar-fixed-top">
-         <div id="google_translate_element"></div>
-<script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            {pageLanguage: 'turkish'},
-            'google_translate_element'
-        );
-    }
+         
+<div id="google_translate_element"></div>
+
+ <script type="text/javascript">
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
 </script>
-<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="index.html">home</a></li>
