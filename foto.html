@@ -6,11 +6,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-            <link rel="icon" href="img/sun.png">
-
-      <title>hayat</title>
+      <title>sevdigim fotolar</title>
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
@@ -23,240 +22,12 @@
                <span class="icon-bar bottom"></span>
                </button>
             </div>
-<style >
-   body {
-      background-color: #E9E9E9;
-      color: #333;
-      font-family:"Lucida handwriting", "Snell Roundhand", "Helvetica Neue",Arial,Helvetica,sans-serif;
-      font-size: 16px;
-   }
-   
-   .amp {
-      font-family:Garamond,Baskerville,Georgia,serif !important;
-      font-style:italic;
-      font-weight:normal;
-      border: none;
-   }
-   
-   a.polaroid {
-      display: block;
-      text-decoration: none;
-      color: #333;
-      padding: 10px 10px 20px 10px;
-      width: 150px;
-      border: 1px solid #BFBFBF;
-      background-color: white;
-      z-index: 2;
-      font-size: 0.7em;
-      -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      -webkit-transition: -webkit-transform 0.5s ease-in;
-   }
-   a.polaroid:hover,
-   a.polaroid:focus,
-   a.polaroid:active {
-      z-index: 999;
-      border-color: #6A6A6A;
-      -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      transform: rotate(0deg);
-   }
-   .polaroid img {
-      margin: 0 0 15px;
-      width: 150px;
-      height: 150px;
-   }
-   
-   a img {
-      border: none;
-      display: block;
-   }
-   
-   .photo-album {
-      position: relative;
-      width: 80%;
-      margin: 0 auto;
-      max-width: 70em;
-      height: 450px;
-      margin-top: 5em;
-      min-width: 800px;
-      max-width: 900px;
-   }
-   .photo-album .polaroid {
-      position: absolute;
-   }
-   .photo-album h1 {
-      position: absolute;
-      z-index: 5;
-      top: 150px;
-      text-align: center;
-      width: 100%;
-      line-height: 1.9;
-   }
-   .photo-album h1 span {
-      background-color: white;
-      font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
-      padding: 0.4em 0.8em 0.3em 0.8em;
-      -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-      border: 1px solid #6A6A6A;
-   }
-   .photo-album .small {
-      width: 75px;
-      padding: 6px 6px 12px 6px;
-      font-size: 0.6em;
-   }
-   .photo-album .small img {
-      width: 75px;
-      height: 75px;
-   }
-   .photo-album .medium {
-      width: 200px;
-      padding: 13px 13px 26px 13px;
-      font-size: 0.8em;
-   }
-   .photo-album .medium img {
-      width: 200px;
-      height: 200px;
-   }
-   .photo-album .large {
-      width: 300px;
-      padding: 20px 20px 30px 20px;
-      font-size: 1em;
-   }
-   .photo-album .large img {
-      width: 300px;
-      height: 300px;
-   }
-   .photo-album .img1 {
-      bottom: 10px;
-      right: 365px;
-      -webkit-transform: rotate(10deg);
-      -moz-transform: rotate(10deg);
-      transform: rotate(10deg);
-   }
-   .photo-album .img2 {
-      top: 50px;
-      right: 20px;
-      -webkit-transform: rotate(-4deg);
-      -moz-transform: rotate(-4deg);
-      transform: rotate(-4deg);
-   }
-   .photo-album .img3 {
-      left: 400px;
-      top: 0;
-      -webkit-transform: rotate(-5deg);
-      -moz-transform: rotate(-5deg);
-      transform: rotate(-5deg);
-   }
-   .photo-album .img4 {
-      top: 10px;
-      left: 495px;
-      -webkit-transform: rotate(-20deg);
-      -moz-transform: rotate(-20deg);
-      transform: rotate(-20deg);
-   }
-   .photo-album .img5 {
-      bottom: 0;
-      right: 0;
-      -webkit-transform: rotate(1deg);
-      -moz-transform: rotate(1deg);
-      transform: rotate(1deg);
-   }
-   .photo-album .img6 {
-      bottom: 10px;
-      right: 156px;
-      -webkit-transform: rotate(6deg);
-      -moz-transform: rotate(6deg);
-      transform: rotate(6deg);
-   }
-   .photo-album .img7 {
-      bottom:0;
-      left:400px;
-      -webkit-transform: rotate(-10deg);
-      -moz-transform: rotate(-10deg);
-      transform: rotate(-10deg);
-   }
-   .photo-album .img8 {
-      bottom: -20px;
-      left: 700px;
-      -webkit-transform: rotate(-8deg);
-      -moz-transform: rotate(-8deg);
-      transform: rotate(-8deg);
-   }
-   .photo-album .img9 {
-      bottom: 0;
-      left: 0;
-      -webkit-transform: rotate(-8deg);
-      -moz-transform: rotate(-8deg);
-      transform: rotate(-8deg);
-   }
-   .photo-album .img10 {
-      top: 0;
-      left: 20px;
-      -webkit-transform: rotate(8deg);
-      -moz-transform: rotate(8deg);
-      transform: rotate(8deg);
-   }
-   .photo-album .img11 {
-      top: 0;
-      right: 0;
-      -webkit-transform: rotate(-8deg);
-      -moz-transform: rotate(-8deg);
-      transform: rotate(-8deg);
-   }
-   .photo-album .img12 {
-      top: 0;
-      left: 680px;
-      -webkit-transform: rotate(18deg);
-      -moz-transform: rotate(18deg);
-      transform: rotate(18deg);
-   }
-   .photo-album .img13 {
-      bottom: -20px;
-      right: 630px;
-      -webkit-transform: rotate(4deg);
-      -moz-transform: rotate(4deg);
-      transform: rotate(4deg);
-   }
-   .photo-album .img14 {
-      top: 90px;
-      left: 430px;
-      -webkit-transform: rotate(15deg);
-      -moz-transform: rotate(15deg);
-      transform: rotate(15deg);
-   }
-   .photo-album .img15 {
-      left:176px;
-      top:20px;
-      -webkit-transform: rotate(-8deg);
-      -moz-transform: rotate(-8deg);
-      transform: rotate(-8deg);
-   }
-   
-   a:hover,
-   a:focus {
-      z-index: 5;
-   }
-   
-</style>
+            <a class="navbar-brand" href="index.html">
+            <h1> sevdigim fotolar </h1>
+            </a>
+                     
 
- <nav class="navbar navbar-default navbar-fixed-top">
-         <div id="google_translate_element"></div>
-<script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            {pageLanguage: 'turkish'},
-            'google_translate_element'
-        );
-    }
-</script>
-<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="index.html">home</a></li>
@@ -267,40 +38,1183 @@
                </ul>
             </div>
          </div>
+      </nav> 
       </nav>
-    <section>
-   <div class="photo-album">
-      
-      <h1><span>sevdigim fotograflar</span></h1>
-      
-      <a href="" class="large polaroid img1"><img src="foto/foto1.JPG" alt="">This breathtaking volcanic lake is at Wai-O-Tapu Thermal Wonderland</a>
-      <a href="" class="polaroid img2"><img src="foto/foto2.jpg" alt="">This lovely waterfall was at Rotorua in Rainbow Springs</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2254704566/in/set-72157604232220981/" class="small polaroid img3"><img src="http://media.24ways.org/2009/14/img/leaf.jpg" alt="">Ferntastic</a>
-      
-      <a href="http://www.flickr.com/photos/nataliedowne/2311404989/in/set-72157604232220981/" class="medium polaroid img4"><img src="img/1.jpeg" alt="">At Kaikoura we went whale watching!</a>
-      
-      <a href="http://www.flickr.com/photos/nataliedowne/2312219680/in/set-72157604232220981" class="polaroid img5"><img src="http://media.24ways.org/2009/14/img/seal.jpg" alt="">Found this little cutie on a walk in New Zealand!</a>
-      
-      
-      <a href="http://www.flickr.com/photos/nataliedowne/2254789880/in/set-72157604232220981/" class="polaroid img6"><img src="http://media.24ways.org/2009/14/img/lake.jpg" alt="">An amazing bubbling volcanic spring, a bit muddy</a>
-      
-      <a href="http://www.flickr.com/photos/nataliedowne/2341399904/in/set-72157604232220981/" class="polaroid img7"><img src="http://media.24ways.org/2009/14/img/simon.jpg" alt="">Simon in a giant Kiwi, pretending to be a Kiwi (the bird)</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2352603191/in/set-72157604232220981/" class="small polaroid img8"><img src="http://media.24ways.org/2009/14/img/albatross.jpg" alt="">Albatross in Dunedin</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2340993237/in/set-72157604232220981/" class="medium polaroid img9"><img src="http://media.24ways.org/2009/14/img/raft.jpg" alt="">White water rafting in Queenstown</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2306995686/in/set-72157604033893095/" class="polaroid img10"><img src="http://media.24ways.org/2009/14/img/whiteisland.jpg" alt="">White Island</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2306989200/in/set-72157604033893095/" class="small polaroid img11"><img src="http://media.24ways.org/2009/14/img/sulphur.jpg" alt="">Sulphurous</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2352608953/in/set-72157604232220981/" class="small polaroid img12"><img src="http://media.24ways.org/2009/14/img/sealions.jpg" alt="">Sea lions!</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2341816430/in/set-72157604232220981/" class="small polaroid img13"><img src="http://media.24ways.org/2009/14/img/horses.jpg" alt="">Horse riding</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2352490411/in/set-72157604232220981/" class="small polaroid img14"><img src="http://media.24ways.org/2009/14/img/camping.jpg" alt="">Stewart Island</a>
-      <a href="http://www.flickr.com/photos/nataliedowne/2339184562/in/set-72157604232220981/" class="polaroid img15"><img src="http://media.24ways.org/2009/14/img/us.jpg" alt="">Us in a blue cave on the Franz Josef glacier</a>
-
-   </div>
-   
-
+      <section id="portfolio">
+         <div class="container">
+            <ul class="portfolio-sorting list-inline text-center">
+               <li><a href="#" data-group="all" class="active">all</a>
+               </li>
+               <li><a href="#" data-group="memos">memories</a>
+               </li>
+               <li><a href="#" data-group="gym">gym!</a>
+               </li>
+               <li><a href="#" data-group="rand">random</a>
+               </li>
+            </ul>
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+                     <ul class="portfolio-items list-unstyled" id="grid">
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto2.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto2.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto1.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto1.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto3.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto3.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto4.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto4.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto5.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto5.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto6.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto6.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto7.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto7.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto8.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto8.jpg" />
+                              </div>
+                           </a>
+                        </li>
+						<li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto9.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto9.png" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto10.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto10.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/foto11.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto11.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto12.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto12.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto14.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto14.png " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto15.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto15.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto16.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto16.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto17.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto17.png" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/gym1.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/gym1.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto18.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto18.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto19.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto19.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto20.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto20.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto21.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto21.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto22.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto22.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto23.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto23.png" />
+                              </div>
+                           </a>
+                        </li>
+                          <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/gym2.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/gym2.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto24.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto24.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto25.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto25.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto26.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto26.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto27.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto27.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto28.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto28.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto29.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto29.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto30.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto30.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto31.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto31.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto32.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto32.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto33.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto33.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto34.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto34.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto35.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto35.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                          <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/gym3.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/gym3.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto36.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto36.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto37.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto37.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                                    <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos","memos"]'>
+                           <a href="foto/foto38.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto38.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto39.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto39.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto40.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto40.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/foto41.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto41.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/foto42.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto42.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto43.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto43.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto44.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto44.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto45.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto45.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto46.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto46.png" />
+                              </div>
+                           </a>
+                        </li>
+                          <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/gym4.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/gym4.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto47.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto47.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto48.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto48.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto49.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto49.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto50.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto50.png " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto51.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto51.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto52.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto52.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto53.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto53.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto54.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto54.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto55.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto55.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto56.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto56.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto57.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto57.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto58.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto58.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto59.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto59.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto60.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto60.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto61.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto61.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto62.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto62.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto63.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto63.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto64.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto64.png" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto65.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto65.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto68.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto68.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto69.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto69.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto70.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto70.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto71.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto71.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto72.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto72.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto78.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto78.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto73.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto73.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto74.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto74.png" />
+                              </div>
+                           </a>
+                        </li>
+                             <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto75.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto75.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto76.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto76.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto77png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto77.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto79.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto79.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto80.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto80.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto81.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto81.png" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto82.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto82.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto83.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto83.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto84.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto84.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto87.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto87.png " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto89.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto89.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto88.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto88.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto90.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto90.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto91.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto91.png" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto92.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto92.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos","memos"]'>
+                           <a href="foto/foto93.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto93.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto94.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto94.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto95.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto96.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto97.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto98.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto99.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto99.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto100.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto100.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto101.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto101.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto102.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto102.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto103.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto103.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos","memos"]'>
+                           <a href="foto/foto104.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto104.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto105.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto105.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto106.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto106.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                       
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto110.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto110.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto111.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto111.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto112.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto112.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/foto113.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto113.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto114.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto114.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto115.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto115.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                                   <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand","memos"]'>
+                           <a href="foto/foto116.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto116.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto117.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto117.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto118.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto118.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto119.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto119.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto120.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto120.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto121.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto121.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos","memos"]'>
+                           <a href="foto/foto122.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto122.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto123.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto123.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto124.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto124.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                       
+                   
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto126.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto126.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand","memos"]'>
+                           <a href="foto/foto127.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto127.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto128.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto128.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto129.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto129.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/foto130.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto130.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                                   <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto131.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto131.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                 
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto134.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto134.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                       
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto136.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto136.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos","memos"]'>
+                           <a href="foto/foto137.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto137.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                       
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto139.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto139.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                       
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto140.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto140.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                      
+                  <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto142.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto142.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto147.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto147.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto148.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto148.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto149.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto149.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto150.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto150.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                          <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto151.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto151.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto152.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto152.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto153.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto153.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto154.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto154.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto155.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto155.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto156.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto156.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto158.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto158.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand"]'>
+                           <a href="foto/foto159.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto159.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto161.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto161.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["gym"]'>
+                           <a href="foto/foto162.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto162.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                         <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto166.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto166.jpg " />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["rand", "memos"]'>
+                           <a href="foto/foto167.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto167.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto168.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto168.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto169.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto169.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto170.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto170.jpg" />
+                              </div>
+                           </a>
+                        </li>       <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto172.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto172.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto173.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto173.jpg" />
+                              </div>
+                           </a>
+                        </li>       <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto174.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto174.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto175.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto175.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto177.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto177.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto178.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto178.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto179.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto179.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto180.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto180.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto181.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto181.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto183.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto183.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto184.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto184.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto185.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto185.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                               <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto186.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto186.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["memos"]'>
+                           <a href="foto/foto187.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="foto/foto187.png" />
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
       <!-- script -->
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/lightbox-plus-jquery.js"></script>
+      <script src="js/jquery.shuffle.min.js"></script>
       <script src="js/modernizr.js"></script>
       <script src="js/script.js"></script>
    </body>
